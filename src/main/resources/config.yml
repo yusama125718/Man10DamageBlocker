@@ -1,0 +1,8 @@
+system: true
+entity_cancel: true
+block_cancel: true
+# mode: 0 -> whitelist
+# mode: 1 -> blacklist
+mode: 0
+blocks:
+  - MAGMA_BLOCK

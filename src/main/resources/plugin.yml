@@ -1,0 +1,12 @@
+name: Man10DamageBlocker
+version: '1.0'
+main: yusama125718.man10DamageBlocker.Man10DamageBlocker
+api-version: '1.20'
+
+commands:
+  mdblocker:
+    description: Man10Trophy
+
+permissions:
+  mdblocker.op:
+    default: op
