@@ -28,6 +28,7 @@ public final class Man10DamageBlocker extends JavaPlugin implements CommandExecu
     @Override
     public void onEnable() {
         mdb = this;
+        mdb.getServer().getPluginManager().registerEvents(this, mdb);
         mdb.saveDefaultConfig();
         system = mdb.getConfig().getBoolean("system");
         entity_cancel = mdb.getConfig().getBoolean("entity_cancel");
