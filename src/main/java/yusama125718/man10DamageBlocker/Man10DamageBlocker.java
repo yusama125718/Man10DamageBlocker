@@ -45,6 +45,7 @@ public final class Man10DamageBlocker extends JavaPlugin implements CommandExecu
             sender.sendMessage(Component.text("[MDBlocker] /mdblocker　entiity [on/off] : エンティティからのダメージをキャンセルするか設定します"));
             sender.sendMessage(Component.text("[MDBlocker] /mdblocker block [on/off] : ブロックからのダメージをキャンセルするか決めます"));
             sender.sendMessage(Component.text("[MDBlocker] /mdblocker mode [blacklist/whitelist] : ブロックからのダメージをブラックリストかホワイトリストか設定します"));
+            sender.sendMessage(Component.text("ブラックリスト：リストに入っていたらダメージ保護から除外します"));
             sender.sendMessage(Component.text("[MDBlocker] /mdblocker addblock [Material] : リストにブロックを追加します"));
             sender.sendMessage(Component.text("[MDBlocker] /mdblocker remblock [Material] : リストからブロックを削除します"));
             sender.sendMessage(Component.text("[MDBlocker] /mdblocker blocklist : ブロックのリストを表示します"));
@@ -144,7 +145,7 @@ public final class Man10DamageBlocker extends JavaPlugin implements CommandExecu
                     return true;
                 }
                 else if (args[1].equals("blacklist")){
-                    if (mode == 0){
+                    if (mode == 1){
                         sender.sendMessage(Component.text("[MDBlocker] すでにblacklistになっています"));
                         return true;
                     }
